@@ -156,13 +156,13 @@ output * {
     bindsym F3 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
     bindsym F2 exec pactl set-sink-volume @DEFAULT_SINK@ -5%
     bindsym F1 exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym F8 exec /home/axl/.local/bin/custom/lock_off;
     # Kill focused window
     #bindsym $mod+Shift+q kill
     bindsym --to-code {
 
     # Toggle the current focus between tiling and floating mode
     $mod+Shift+space floating toggle
-
     # Swap focus between the tiling area and the floating area
     $mod+space focus mode_toggle
 

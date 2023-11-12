@@ -5,9 +5,9 @@
 export GO111MODULE=off 
 alias vi=nvim
 alias vim=nvim
-#function ls {
-#	lsd
-#}
+function ls {
+	lsd
+}
 alias ls=lsd
 alias pw=pipe-viewer
 alias wl=wl-copy
