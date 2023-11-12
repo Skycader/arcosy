@@ -22,3 +22,7 @@ cp ~/.zlogin ./zsh/
 #6. qt
 
 #7. Manuals
+
+#8. Foot
+mkdir foot
+cp ~/.config/foot/foot.ini foot 
