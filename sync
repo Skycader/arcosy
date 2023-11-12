@@ -25,4 +25,11 @@ cp ~/.zlogin ./zsh/
 
 #8. Foot
 mkdir foot
-cp ~/.config/foot/foot.ini foot 
+cp ~/.config/foot/foot.ini foot
+
+#9. Astranvim
+
+rm -rf astranvim
+mkdir astranvim
+cp -r ~/.config/nvim astranvim
+
