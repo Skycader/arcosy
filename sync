@@ -1,0 +1,24 @@
+#Sync all configs and scripts to GitHub Repo
+
+#1. SWAY CONFIG
+mkdir sway
+cp ~/.config/sway/config ./sway/
+
+#2. i3Status-rust config
+mkdir i3status-rust
+cp ~/.config/i3status-rust/config.toml ./i3status-rust/
+
+#3. Global scripts (lock_off, etc.)
+cp -r ~/.local/bin/custom ./local.bin.custom/
+
+#4. ZSH (Oh-my-zsh)
+mkdir zsh
+cp ~/.zshrc ./zsh/
+cp ~/.zlogin ./zsh/
+
+#5. Astra vim
+#Vim (AstraVim)
+
+#6. qt
+
+#7. Manuals
