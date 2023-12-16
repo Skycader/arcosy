@@ -29,7 +29,7 @@ output HDMI-A-1 {
     mode 1920x1080@75.002Hz
 }
 
-exec autooff 
+exec autooff
 input  5426:153:Razer_Razer_Basilisk_V3 {
    pointer_accel -0.8 
   # accel_profile "adaptive"
@@ -47,7 +47,7 @@ input 1133:49271:Logitech_USB_Optical_Mouse {
 #}
 
 # Hide mouse cursor after a period of inactivity.
-seat seat0 hide_cursor 3000
+seat seat0 hide_cursor 300
 input "type:touchpad" tap enabled
 assign [app_id="org.telegram.desktop"] workspace number 2
 assign [app_id="Kotatogram_Desktop$"] workspace number 2
@@ -97,7 +97,7 @@ bindsym f10 exec "lock_off"
 bindsym f11 exec "brightnessctl set 5%-"
 bindsym f12 exec "brightnessctl set 5%+"
 bindsym f6 exec "screen_toggle"
-
+bindsym $mod+p focus mode_toggle;
 bindsym XF86AudioPlay exec "playerctl play-pause"
 
 ### Output configuration

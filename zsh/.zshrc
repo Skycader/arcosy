@@ -1,3 +1,4 @@
+#swaymsg input 5426:153:Razer_Razer_Basilisk_V3 events disabled
 # If you come from bash you might have to change your $PATH.
 #export PATH=$HOME/bin:/usr/local/bin:$PATH
 
