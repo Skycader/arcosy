@@ -47,7 +47,7 @@ input 1133:49271:Logitech_USB_Optical_Mouse {
 #}
 
 # Hide mouse cursor after a period of inactivity.
-seat seat0 hide_cursor 300
+seat seat0 hide_cursor 3000
 input "type:touchpad" tap enabled
 assign [app_id="org.telegram.desktop"] workspace number 2
 assign [app_id="Kotatogram_Desktop$"] workspace number 2
@@ -65,7 +65,8 @@ exec "sleep 5 && telegram-desktop"
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
-set $mod Mod4
+#set $mod Mod4 #Win key
+set $mod Mod1
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -201,9 +202,9 @@ output * {
     $mod+a exec footclient
 	$mod+x exec "footclient -a floatterminal"
     $mod+F fullscreen
-    $mod+c exec grim - | wl-copy
+   # $mod+c exec grim - | wl-copy
 	#$mod+x exec grim "$HOME/screenshots/$(date '+%y%m%d_%H-%M-%S').png"
-    Alt+c exec grim -g "$(slurp -d)" - | wl-copy
+    $mod+c exec grim -g "$(slurp -d)" - | wl-copy
     $mod+d exec $menu
 
     #$mod+Z focus left
@@ -227,7 +228,7 @@ output * {
     floating_modifier $mod normal
 
     # Reload the configuration file
-    bindsym $mod+Shift+c reload
+    bindsym $mod+Shift+z reload
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
