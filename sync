@@ -32,4 +32,5 @@ cp ~/.config/foot/foot.ini foot
 rm -rf astranvim
 mkdir astranvim
 cp -r ~/.config/nvim astranvim
+cp -r ~/Wallpapers/ .
 
