@@ -47,7 +47,7 @@ input 1133:49271:Logitech_USB_Optical_Mouse {
 #}
 
 # Hide mouse cursor after a period of inactivity.
-seat seat0 hide_cursor 300
+seat seat0 hide_cursor 30000
 input "type:touchpad" tap enabled
 assign [app_id="org.telegram.desktop"] workspace number 2
 assign [app_id="Kotatogram_Desktop$"] workspace number 2
@@ -199,15 +199,15 @@ output * {
     $mod+q kill
     #$mod+d exec $menu
     $mod+a exec footclient
-	$mod+Tab exec "footclient -a floatterminal"
+	$mod+x exec "footclient -a floatterminal"
     $mod+F fullscreen
     #$mod+c exec grim - | wl-copy
 	#$mod+x exec grim "$HOME/screenshots/$(date '+%y%m%d_%H-%M-%S').png"
     Alt+c exec grim -g "$(slurp -d)" - | wl-copy
     $mod+d exec $menu
 
-    $mod+Z focus left
-    $mod+X focus right
+    Mod1+Z focus left
+    Mod1+X focus right
 	$mod+Z+Shift focus down
 	$mod+X+Shift focus up
     }
@@ -285,6 +285,7 @@ bindsym Alt_R workspace prev
     bindsym $mod+9 workspace number 9
     bindsym $mod+0 workspace number 10
     # Move focused container to workspace
+    bindcode $mod+Shift+49 move container to workspace number 0
     bindsym $mod+Shift+1 move container to workspace number 1
     bindsym $mod+Shift+2 move container to workspace number 2
     bindsym $mod+Shift+3 move container to workspace number 3
