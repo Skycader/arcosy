@@ -38,13 +38,13 @@ input 1133:49271:Logitech_USB_Optical_Mouse {
     pointer_accel -0.5
    # accel_profile "flat"
 }
-#input 7847:102:2.4G_Mouse {
+input 7847:102:2.4G_Mouse {
     #tap enabled
     #natural_scroll disabled
     #dwt enabled
-#    accel_profile "flat" # disable mouse acceleration (enabled by default; to set it manually, use "adaptive" instead of "flat")
-#   pointer_accel -0.2 # set mouse sensitivity (between -1 and 1)
-#}
+    accel_profile "flat" # disable mouse acceleration (enabled by default; to set it manually, use "adaptive" instead of "flat")
+   pointer_accel -0.2 # set mouse sensitivity (between -1 and 1)
+}
 
 # Hide mouse cursor after a period of inactivity.
 seat seat0 hide_cursor 30000
