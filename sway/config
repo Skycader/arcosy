@@ -202,8 +202,8 @@ output * {
 	$mod+x exec "footclient -a floatterminal"
     $mod+F fullscreen
     #$mod+c exec grim - | wl-copy
-	#$mod+x exec grim "$HOME/screenshots/$(date '+%y%m%d_%H-%M-%S').png"
-    Alt+c exec grim -g "$(slurp -d)" - | wl-copy
+	$mod+Tab exec $HOME/.local/bin/custom/screenshot 
+	Alt+c exec grim -g "$(slurp -d)" - | wl-copy
     $mod+d exec $menu
 
     Mod1+Z focus left
