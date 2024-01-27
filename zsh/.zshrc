@@ -4,6 +4,9 @@
 
 #Let go download srcs
 export GO111MODULE=off 
+export EDITOR=vim
+#FIX Idea Blank Screen
+export _JAVA_AWT_WM_NONREPARENTING=1
 alias vi=nvim
 alias vim=nvim
 function ls {
