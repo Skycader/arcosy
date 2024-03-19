@@ -202,7 +202,8 @@ output * {
 	$mod+x exec "footclient -a floatterminal"
     $mod+F fullscreen
     #$mod+c exec grim - | wl-copy
-	F4 exec $HOME/.local/bin/custom/screenshot 
+	F4 exec $HOME/.local/bin/custom/screenshot
+	F10 exec $HOME/.local/bin/custom/lock_off
 	Alt+c exec grim -g "$(slurp -d)" - | wl-copy
     $mod+d exec $menu
 
