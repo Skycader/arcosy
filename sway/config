@@ -203,6 +203,7 @@ output * {
     $mod+F fullscreen
     #$mod+c exec grim - | wl-copy
 	F4 exec $HOME/.local/bin/custom/screenshot
+	F12 exec $HOME/.local/bin/custom/screen_off
 	F10 exec $HOME/.local/bin/custom/lock_off
 	Alt+c exec grim -g "$(slurp -d)" - | wl-copy
     $mod+d exec $menu
