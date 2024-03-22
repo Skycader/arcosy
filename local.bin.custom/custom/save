@@ -1,3 +1,5 @@
+echo "Pull?"
+sleep 5
 git add .
 git commit -am "$1"
 git push origin HEAD
