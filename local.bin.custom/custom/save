@@ -1,5 +1,4 @@
-echo "Pull?"
-sleep 5
+read -p "Git pull will be run, continue? <Enter>"
 git add .
 git commit -am "$1"
 git push origin HEAD
