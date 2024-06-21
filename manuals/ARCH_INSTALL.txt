@@ -1,0 +1,375 @@
+:: ARCHLINUX INSTALLATION INSTRUCTION 2024
+:: SwayWM Dark Solarized Edition
+:: By AXL
+:: Many thanks to SCHEF & OKHSUNROG
+
+:: Connecting to Netowrk
+# ping google.com // if you have wired connection
+# dhcpcd //configure network if there's no connection
+# ip a //information about network
+
+:: Part 1
+:: Installing base system
+
+:: Connect to Wi-Fi
+# rfkill unblock wifi //unblocking wifi (high change it was blocked)
+# ip link set wlan0 up //Enable wifi adapter
+# iwctl
+
+[iwd] # station wlan0 connect <wifi name>
+Passphrase: *****
+[iwd] # exit
+
+# ping google.com
+
+If there's still no connection, there
+might be problem with DNS servers configuration
+
+# vim /etc/resolv.conf
+~ nameserver 8.8.8.8
+~ nameserver 8.8.4.4
+Writing this in may help.
+
+:: Labeling disks
+
+# fdisk -l //show available disks
+# fdisk <disk name>
+
+GPT will be created. Hybrid parititioning will work
+in both UEFI and BIOS modes. Working with bios partition.
+
+Command (m for help): d //to delete partitions if exist
+Command (m for help): 1-4 //for example if you had 4 parittions, 
+// you will need to delete them one by one.
+
+Command (m for help): g //create GPT partition
+Command (m for help): w //write changes
+
+:: Partitioning disks
+
+# cfdisk <disk>
+
+[New]
+Partition size: 31M (for 31 megabytes)
+[Type]
+Choose: BIOS BOOT
+
+Now create new partition of size 
+from 300M (enough for 1 kernel) 
+to 500M (or 2+ kernels) and type EFI System.
+
+You may want to make SWAP partition.
+However, there are pros and cons:
+Pros: easy to make one and hibernate. 
+Cons: will be impossible to resize or add to other partitions.
+
+I'll show you how to create a swap file further on.
+
+Now, the for whole other space set partition of Linux filesystem.
+
+[Write] 
+Type "yes".
+[Quit]
+
+Check that everything you just did worked fine.
+
+# fdisk -l
+
+:: Making filesystem
+
+!NOTICE
+You DO NOT touch the bios boot partition.
+
+# mkfs.vfat <partition> (for example, /dev/sda2) //make efi parittion FAT
+
+If you created SWAP partition:
+# mkswap <paritition>
+# swapon <partition>
+
+We will use BTRFS filesystem for root parittion, 
+which is faster and supports many useful features.
+
+# mkfs.btrfs <partition>
+
+If there happened errors due to many rewritings, you may want to use
+# mkfs.btrfs -f <partition>
+
+:: Mounting partitions
+
+# mount <root partition> /mnt //mounting root partition (for example /dev/sda3)
+
+Creating boot folder for bootloader.
+If you have BIOS:
+# mkdir /mnt/boot
+If you have UEFI:
+# mkdir /mnt/boot/EFI
+
+# mount <efi partition> /mnt/boot //for bios
+# mount <efi partition> /mnt/boot/EFI //for uefi
+
+:: Installing base system 
+
+# pacstrap -i /mnt base base-devel linux linux-headers linux-firmware
+dosfstools btrfs-progs
+
+Ucodes for:
+Intel: intel-ucode
+AMD: amd-ucode
+
+You may want to install an editor: vim or nano.
+
+Type <enter> for each to choose default and type yes to install.
+
+linux - is a common kernel, and headers are additional features.
+linux-lts (and linux-lts-headers) kernel are more stable.
+linux-zen (and linux-zen-headers) kernel is the fastest, but may be buggy.
+linux-firmware - drivers for firmware.
+dosfstools and btrfs-progs utilities for filesystems.
+
+:: Configuring filesystem
+
+# genfstab -U /mnt >> /mnt/etc/fstab
+# cat /mnt/etc/fstab //check the created file 
+
+!NOTICE bios partition is not listed
+!WARNING
+
+If you don't see EFI partition in the list, it could mean
+you made a mistake during mounting. Mount your efi partition to /mnt.
+:: Entering our created system
+
+# arch-chroot /mnt
+
+:: Configuring date and time
+
+# ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+# hwclock --systohc
+Check time:
+# date
+
+:: Localing system
+
+# vim /etc/locale.gen
+Remove "#" for those you want to use.
+Necessary: en_US.UTF-8 UTF-8.
+Optionally: ru_RU.UTF-8 UTF-8.
+I personally recommend to use system in Eglish language only.
+
+Generate locales:
+# locale-gen 
+
+# vim /etc/locale.conf
+
+Type in system localization:
+LANG=en_US.UTF-8
+or
+LANG=ru_RU.UTF-8
+
+Confiruing console language:
+
+# vim /etc/vconsole.conf
+~ LANG=en
+~ FONT=cyr-sun16
+Set name for computer:
+
+# vim /etc/hostname
+~ ARCH
+
+Editing hosts:
+
+~ 127.0.0.1 localhost 
+~ ::1         localhost
+~ 127.0.0.1   ARCH
+
+:: Making image for ram (initramfs)
+
+If you have just one kernel:
+# mkinitcpio -P
+or multiple:
+# mkinitcpio -p <kernel>
+
+:: Passwording root
+
+# passwd root
+
+:: Bootloader and network tools
+
+# pacman -S grub efibootmgr dhcpcd dhclient networkmanager
+
+Grub is installed onto the disk, NOT partition.
+# grub-install <disk> (for example, /dev/sda)
+If last command didn't work, try  (if EFI):
+# grub-install --boot-directory=/boot/EFI
+
+Configure grub:
+
+# grub-mkconfig -o /boot/grub/grub.cfg
+
+# exit
+
+# umount -R /mnt
+
+Reboot into our system:
+# reboot
+
+:: Part 2
+:: Configuring base system
+
+Enabling root access for a user:
+# vim /etc/sudoers
+~ remove "#" from "%wheel ALL=(ALL) ALL"
+or
+UPDATED: ~ "%wheel ALL=(ALL:ALL) ALL
+
+Adding user:
+!NOTICE
+Nickname cannot use capital letters.
+# useradd -m -G wheel -s /bin/bash <nickname>
+
+!NOTICE
+For safety measures, the password for root and a user must differ!
+
+# exit
+
+Login as your new user.
+
+Try sudo:
+
+$ sudo su
+Enable network:
+
+$ systemctl enable NetworkManager
+
+$ reboot
+
+Connecto Wi-Fi with nmcli:
+
+$ nmcli d wifi connect <Router Name> password <password>
+
+Open /etc/pacman.conf and remove multilib '#".
+
+
+$ pacman -Syu archlinux-keyring 
+
+Video acceleration:
+
+= Intel =
+
+
+lib32-mesa vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader libva-media-driver xf86-video-intel 
+
+= AMD = 
+
+
+lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader
+
+:: Enable rubbish bin and ability to use flash drives:
+$ sudo pacman -S gvfs
+:: Enable ntfs support:
+$ sudo pacman -S ntfs-3g
+:: Enable MTP support (for Android):
+$ sudo pacman -S mtpfs
+Install yay:
+
+$ sudo pacman -S git
+$ sudo git clone https://aur.archlinux.org/yay.git
+$ sudo chown -R  <user>:users yay
+$ cd yay
+$ makepkg -si
+$ yay --version
+
+Install audio server:
+
+1. sudo pacman -S pulseaudio
+
+2. Modern:
+$ yay -S pipewire pipewire-alsa pipewire-pulse pipewire-jack pipewire-jack-dropin helvum
+
+:: Part 3
+:: Installing SwayWM
+
+$ sudo pacman -S sway pcmanfm lxappearance qbittorrent xorg-xwayland pavucontrol imv
+$ sudo pacman -S lsd swayidle swaylock-effects swaybg telegram-desktop nodejs
+$ sudo pacman -S awesome-terminal-fonts powerline-fonts kitty htop  wl-clipboard wl-copy
+$ sudo pacman -S slurp grim neofetch engrampa mpv
+$ sudo pacman -S neovim neovim-telescope code 
+$ sudo pacman -S otf-font-awesome-4  jre17-openjdk 
+(optionally thunar)
+(optionally oh my zsh)
+$ yay -S foot mako swaylock-effects-git i3status-rust sway-launcher-desktop sworkstyle
+$ yay -S qt5ct qt6ct qt5gtk2 qt6gtk2
+
+Install fonts:
+
+$ sudo pacman -S noto-fonts otf-font-awesome ttf-font-awesome ttf-jetbrains-mono
+$ sudo pacman -S noto-fonts-emoji noto-fonts-cjk
+(one for emoji, one for chinese and japanese, as well as many more symbols)
+
+Optionally install microsoft fonts so that verdana and others are displayed good
+in browser:
+$ yay -S ttf-ms-fonts
+$ Installing theme:
+
+$ yay -S numix-icon-theme-pack-git gtk-theme-numix-solarized
+
+Now, open lxapperance by typing in terminal and chosoe numix (for example,
+NumixSolarizedDarkCyan, in icon theme choose Numix Circle).
+
+Open qt5ct (and then qt6ct) and set gtk2 theme.
+
+:: Confiruing utilities:
+- sway : .config/sway/config
+- i3status-rust : .config/i3status-rs/config.toml
+- sworkstyle : .config/sworkstyle/config.toml
+- foot : .config/foot/foot.ini
+Some other DEs:
+
++Gnome 
+
+$ pacman -S  xorg xorg-server gnome gnome-extra gdm  
+$ systemctl enable gdm 
+
++XFCE
+
+pacman -S xorg xorg-server xfce4 xfce4-goodies lightdm lightdm-gtk-greeter xfce4-pulseaudio-plugin
+$ systemctl enable lightdm 
+
++KDE plasma 
+
+$ pacman -S xorg xorg-server plasma  plasma-wayland-session  egl-wayland sddm sddm-kcm packagekit-qt5 kde-applications 
+
+$ systemctl enable sddm 
+
+
++Сinnamon
+$ pacman -S xorg xorg-server cinnamon 
+$ systemctl enable gdm 
+
++Deepin 
+$ pacman -S xorg xorg-server deepin deepin-extra lightdm lightdm-deepin-greeter 
+$ systemctl enable lightdm
+
+
+
++Enlightenment
+$ pacman -S xorg xorg-server enlightenment lightdm lightdm-gtk-greeter
+$ systemctl enable lightdm
+
++ Mate 
+
+$ pacman -S xorg xorg-server  mate   mate-extra  mate-panel   mate-session-manager
+$ systemctl enable mdm
+
+
+
++LXDE 
+
+$ pacman -S xorg xorg-server lxde-common  lxsession openbox lxde lxdm
+$ systemctl enable lxdm
+
+Sources:
+1. https://youtu.be/aMnaM7llZhM
+
+
+
+
