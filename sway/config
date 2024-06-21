@@ -31,8 +31,8 @@ output HDMI-A-1 {
 
 exec autooff
 input  5426:153:Razer_Razer_Basilisk_V3 {
-   pointer_accel -0.8 
-  # accel_profile "adaptive"
+   pointer_accel -0.8
+ # accel_profile "adaptive"
 }
 input 1133:49271:Logitech_USB_Optical_Mouse {
     pointer_accel -0.5
