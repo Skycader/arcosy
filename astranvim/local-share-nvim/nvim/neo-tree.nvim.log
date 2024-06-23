@@ -1,0 +1,213 @@
+[ERROR Sun 24 Sep 2023 02:27:41 AM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/angular-blog :  ENOENT: no such file or directory: /home/axl/projects/angular/angular-blog
+[WARN  Sun 01 Oct 2023 01:00:47 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 01 Oct 2023 01:00:54 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 01 Oct 2023 01:00:55 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 01 Oct 2023 01:01:10 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 01 Oct 2023 01:01:11 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 01 Oct 2023 01:01:12 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 01 Oct 2023 01:01:13 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Wed 04 Oct 2023 07:06:08 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Wed 04 Oct 2023 07:06:09 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Wed 04 Oct 2023 07:06:10 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Wed 04 Oct 2023 07:06:11 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Wed 04 Oct 2023 07:06:12 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Wed 04 Oct 2023 07:15:50 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Wed 04 Oct 2023 07:15:55 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Wed 04 Oct 2023 07:15:56 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Wed 04 Oct 2023 07:15:57 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Wed 04 Oct 2023 07:46:22 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Wed 04 Oct 2023 07:46:23 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[INFO  Sun 15 Oct 2023 07:41:04 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/angular-blog/src/app/shared/shared
+[INFO  Sun 22 Oct 2023 12:58:44 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:109: No items, skipping git ignored/status lookups
+[ERROR Sun 05 Nov 2023 04:43:59 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[ERROR Sun 05 Nov 2023 06:55:23 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(buffer):E325: ATTENTION
+[ERROR Sun 05 Nov 2023 06:56:07 PM MSK] ...re/nvim/lazy/neo-tree.nvim/lua/neo-tree/events/queue.lua:83: Error in event handler for event vim_win_enter[neo-tree-win-enter]: vim/_editor.lua:0: WinEnter Autocommands for "*"..script nvim_exec2() called at WinEnter Autocommands for "*":0: Vim(quit):E37: No write since last change
+[WARN  Sun 05 Nov 2023 06:56:09 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 05 Nov 2023 06:56:10 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[ERROR Sun 05 Nov 2023 07:00:27 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[ERROR Sun 12 Nov 2023 06:30:55 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(buffer):E325: ATTENTION
+[ERROR Sun 12 Nov 2023 06:31:08 PM MSK] ...re/nvim/lazy/neo-tree.nvim/lua/neo-tree/events/queue.lua:83: Error in event handler for event vim_win_enter[neo-tree-win-enter]: vim/_editor.lua:0: WinEnter Autocommands for "*"..script nvim_exec2() called at WinEnter Autocommands for "*":0: Vim(quit):E37: No write since last change
+[WARN  Sun 12 Nov 2023 06:31:10 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 12 Nov 2023 06:31:10 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 12 Nov 2023 06:31:11 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 12 Nov 2023 06:31:12 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[ERROR Sun 12 Nov 2023 06:31:39 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[WARN  Sun 19 Nov 2023 07:53:39 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 19 Nov 2023 07:53:40 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 19 Nov 2023 07:53:41 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 19 Nov 2023 07:53:41 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 19 Nov 2023 07:53:42 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 19 Nov 2023 07:53:42 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 19 Nov 2023 07:53:42 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 19 Nov 2023 07:53:43 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 19 Nov 2023 07:53:43 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[ERROR Sat 25 Nov 2023 04:04:12 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[INFO  Tue 28 Nov 2023 09:36:30 PM MSK] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut ~/projects/angular/angular-blog to clipboard
+[INFO  Tue 28 Nov 2023 09:36:31 PM MSK] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut ~/projects/angular/angular-blog to clipboard
+[INFO  Tue 28 Nov 2023 09:36:32 PM MSK] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut ~/projects/angular/angular-blog to clipboard
+[INFO  Tue 28 Nov 2023 09:36:33 PM MSK] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:244: Cut ~/projects/angular/angular-blog to clipboard
+[WARN  Sun 10 Dec 2023 06:35:47 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 10 Dec 2023 06:35:47 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 10 Dec 2023 06:35:48 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 10 Dec 2023 06:35:49 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[INFO  Sun 17 Dec 2023 10:51:13 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Sun 17 Dec 2023 10:51:17 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: false
+[INFO  Sun 17 Dec 2023 10:51:18 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[WARN  Tue 19 Dec 2023 09:00:17 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[INFO  Tue 19 Dec 2023 09:00:25 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Tue 19 Dec 2023 09:21:25 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Tue 19 Dec 2023 09:22:31 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed .prettierrc successfully
+[INFO  Tue 19 Dec 2023 09:24:18 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed .prettierrc.json successfully
+[INFO  Tue 19 Dec 2023 09:24:45 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: false
+[INFO  Tue 19 Dec 2023 09:24:46 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Tue 19 Dec 2023 09:24:46 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: false
+[INFO  Tue 19 Dec 2023 09:26:44 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Wed 20 Dec 2023 08:49:20 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/radon-engine/src/app/components/skill
+[INFO  Fri 22 Dec 2023 02:52:59 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed remixicon.scss successfully
+[INFO  Fri 22 Dec 2023 02:54:19 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed remixicon.css successfully
+[INFO  Fri 22 Dec 2023 03:01:46 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/radon-engine/src/assets/styles
+[INFO  Thu 28 Dec 2023 01:32:16 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/radium/src/app/authg
+[INFO  Thu 28 Dec 2023 01:38:42 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/radium/src/app/auth
+[INFO  Thu 28 Dec 2023 01:39:06 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/radium/src/auth
+[INFO  Sat 30 Dec 2023 08:26:16 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/resolver/src/app/users
+[INFO  Thu 04 Jan 2024 10:03:24 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/radon-engine/src/app/not-found
+[INFO  Thu 04 Jan 2024 10:53:50 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/radium/src/environments
+[ERROR Fri 05 Jan 2024 06:31:12 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:164: Could not move the files from /home/axl/projects/angular/radium/src/app/auth/models to /home/axl/projects/angular/radium/src/app/auth/models/shared : EINVAL: invalid argument: /home/axl/projects/angular/radium/src/app/auth/models -> /home/axl/projects/angular/radium/src/app/auth/models/shared
+[ERROR Fri 05 Jan 2024 06:31:19 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:164: Could not move the files from /home/axl/projects/angular/radium/src/app/auth/models to /home/axl/projects/angular/radium/src/app/auth/models/./shared : EINVAL: invalid argument: /home/axl/projects/angular/radium/src/app/auth/models -> /home/axl/projects/angular/radium/src/app/auth/models/./shared
+[ERROR Fri 05 Jan 2024 06:31:36 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:164: Could not move the files from /home/axl/projects/angular/radium/src/app/auth/models to /home/axl/projects/angular/radium/src/app/auth/models/shared : EINVAL: invalid argument: /home/axl/projects/angular/radium/src/app/auth/models -> /home/axl/projects/angular/radium/src/app/auth/models/shared
+[INFO  Fri 05 Jan 2024 06:48:14 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed registerRequest.interface.ts successfully
+[INFO  Fri 05 Jan 2024 06:49:58 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/radium/src/app/auth/shared
+[INFO  Fri 05 Jan 2024 09:29:41 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Sat 27 Jan 2024 10:38:23 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed edior-layouty successfully
+[INFO  Sat 27 Jan 2024 10:38:25 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/neon/src/app/neon-editor/components/edior-layouty
+[INFO  Sun 28 Jan 2024 12:20:03 AM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Sun 28 Jan 2024 06:52:06 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ardon-ng/src/app/styles
+[INFO  Sun 28 Jan 2024 07:14:09 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ardon-ng/src/ardon-commom
+[INFO  Sun 28 Jan 2024 07:14:27 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ardon-ng/src/app/ardon-commom
+[WARN  Fri 02 Feb 2024 06:32:46 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Fri 02 Feb 2024 06:32:49 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Fri 02 Feb 2024 06:32:49 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Fri 02 Feb 2024 06:32:50 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Fri 02 Feb 2024 06:32:51 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[INFO  Sat 03 Feb 2024 05:21:10 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ardon-ng/src/app/article/components/not-found
+[WARN  Sat 03 Feb 2024 05:21:22 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[INFO  Tue 06 Feb 2024 08:40:41 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/nest/ardon-backend/src/article
+[INFO  Tue 06 Feb 2024 10:28:17 PM MSK] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:210: Copied moshchenie-dorozhek.json to clipboard
+[INFO  Sat 10 Feb 2024 07:42:30 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ardon-ng/src/app/profile/components/captcha
+[INFO  Sat 10 Feb 2024 08:02:14 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ardon-ng/src/app/captcha/utils/interceptors/captcha2
+[INFO  Sat 10 Feb 2024 08:04:14 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ardon-ng/src/app/captcha/utils/resolvers
+[INFO  Sat 10 Feb 2024 08:59:31 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ardon-ng/src/app/app-shell
+[INFO  Sat 10 Feb 2024 11:34:28 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed core successfully
+[INFO  Sat 10 Feb 2024 11:34:54 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed config successfully
+[INFO  Sat 10 Feb 2024 11:41:45 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/nest/ardon-backend/src/modules/core
+[INFO  Sat 10 Feb 2024 11:42:53 PM MSK] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:210: Copied models to clipboard
+[INFO  Sat 10 Feb 2024 11:43:08 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/nest/ardon-backend/src/modules/core/models
+[INFO  Sat 10 Feb 2024 11:43:10 PM MSK] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:210: Copied models to clipboard
+[INFO  Sat 10 Feb 2024 11:43:12 PM MSK] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:210: Copied models to clipboard
+[INFO  Sat 10 Feb 2024 11:43:32 PM MSK] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:210: Copied config.entity.ts to clipboard
+[INFO  Sat 10 Feb 2024 11:59:12 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ardon-ng/src/app/captcha/utils
+[INFO  Sat 10 Feb 2024 11:59:53 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/nest/ardon-backend/src/modules/config/models
+[INFO  Sat 10 Feb 2024 11:59:55 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/nest/ardon-backend/src/modules/config/entities
+[INFO  Sat 10 Feb 2024 11:59:59 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/nest/ardon-backend/src/modules/config/dto
+[INFO  Sun 11 Feb 2024 12:01:30 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/nest/ardon-backend/src/modules/config
+[WARN  Sun 11 Feb 2024 12:12:05 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 11 Feb 2024 12:12:06 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[INFO  Sun 11 Feb 2024 12:12:33 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/nest/ardon-backend/src/modules/case
+[ERROR Sun 11 Feb 2024 12:12:42 AM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/nest/ardon-backend/src/modules/case :  ENOENT: no such file or directory: /home/axl/projects/nest/ardon-backend/src/modules/case
+[INFO  Sun 11 Feb 2024 08:53:45 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed repos successfully
+[INFO  Mon 12 Feb 2024 06:40:15 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[ERROR Mon 12 Feb 2024 07:41:43 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[INFO  Mon 12 Feb 2024 08:55:48 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ardon-ng/src/app/editor/layouts/editor-layout
+[INFO  Mon 12 Feb 2024 08:56:08 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ardon-ng/src/app/editor/layouts
+[WARN  Mon 12 Feb 2024 09:07:52 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Mon 12 Feb 2024 09:07:53 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Mon 12 Feb 2024 09:07:54 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sat 17 Feb 2024 11:53:47 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:361: File already exists
+[INFO  Sun 18 Feb 2024 07:52:01 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ardon-ng/src/assets/topics
+[INFO  Sun 18 Feb 2024 07:52:50 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Sun 18 Feb 2024 07:52:52 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: false
+[ERROR Sun 18 Feb 2024 09:28:41 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/nest/ardon-backend :  ENOENT: no such file or directory: /home/axl/projects/nest/ardon-backend
+[INFO  Sun 18 Feb 2024 10:18:42 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/ardon-engine/ardon-frontend/src/app/core
+[WARN  Thu 22 Feb 2024 12:11:54 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:558: /home/axl/projects/ardon-engine/ardon-frontend/src/api/core/config/en.json  already exists
+[INFO  Fri 23 Feb 2024 07:18:51 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/ardon-engine/ardon-frontend/src/app/dynemic-forms
+[ERROR Sat 24 Feb 2024 05:24:19 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:164: Could not move the files from /home/axl/projects/ardon-engine/ardon-frontend/src/app/article/components/photo-viewer to /home/axl/projects/ardon-engine/ardon-frontend/src/app/article/components/photo-viewer/src/app/ardon-common/components : EINVAL: invalid argument: /home/axl/projects/ardon-engine/ardon-frontend/src/app/article/components/photo-viewer -> /home/axl/projects/ardon-engine/ardon-frontend/src/app/article/components/photo-viewer/src/app/ardon-common/components
+[INFO  Sat 24 Feb 2024 05:37:52 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/ardon-engine/ardon-frontend/src/api/public
+[WARN  Sun 25 Feb 2024 02:52:36 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 25 Feb 2024 02:52:38 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[INFO  Tue 27 Feb 2024 11:58:54 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/ardon-engine/ardon-frontend/src/app/editor/components/collage-drag
+[INFO  Sun 03 Mar 2024 12:16:32 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/Raptorium/src/app/root
+[ERROR Wed 06 Mar 2024 12:58:12 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[ERROR Wed 06 Mar 2024 07:06:05 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[WARN  Fri 08 Mar 2024 11:31:14 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[INFO  Thu 21 Mar 2024 01:36:44 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Thu 21 Mar 2024 01:37:29 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed angular-favicon.ico successfully
+[INFO  Thu 21 Mar 2024 01:41:54 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: false
+[INFO  Sun 21 Apr 2024 02:56:55 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/radium/src/app/shared/backend-error-messages
+[INFO  Sun 21 Apr 2024 02:56:57 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/radium/src/app/shared/backendErrorMessages
+[INFO  Mon 29 Apr 2024 12:21:30 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/radium/src/app/auth/sign-in
+[INFO  Mon 29 Apr 2024 12:23:10 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/radium/src/app/auth/components/auth
+[INFO  Sat 11 May 2024 11:45:17 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth-interceptor
+[INFO  Sat 11 May 2024 11:46:27 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth
+[ERROR Sat 11 May 2024 12:11:43 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth :  ENOENT: no such file or directory: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth
+[ERROR Sat 11 May 2024 12:11:43 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth-interceptor :  ENOENT: no such file or directory: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth-interceptor
+[ERROR Sat 11 May 2024 01:19:20 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth :  ENOENT: no such file or directory: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth
+[ERROR Sat 11 May 2024 01:19:21 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth-interceptor :  ENOENT: no such file or directory: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth-interceptor
+[ERROR Sat 11 May 2024 01:34:58 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth :  ENOENT: no such file or directory: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth
+[ERROR Sat 11 May 2024 01:34:59 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth-interceptor :  ENOENT: no such file or directory: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth-interceptor
+[ERROR Sat 11 May 2024 01:51:52 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth :  ENOENT: no such file or directory: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth
+[ERROR Sat 11 May 2024 01:51:53 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth-interceptor :  ENOENT: no such file or directory: /home/axl/projects/angular/radium/src/app/auth/utils/interceptors/auth-interceptor
+[INFO  Sat 11 May 2024 02:08:52 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed dev.proxy.json successfully
+[INFO  Sat 11 May 2024 02:11:24 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed dev.proxy.json successfully
+[WARN  Sat 11 May 2024 02:21:35 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sun 12 May 2024 03:18:48 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:361: File already exists
+[INFO  Sun 19 May 2024 07:23:55 PM MSK] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:210: Copied auth.interceptor.spec.ts to clipboard
+[INFO  Thu 23 May 2024 12:14:24 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed todo-state.model.ts successfully
+[INFO  Thu 23 May 2024 01:13:45 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed todos.selector.ts successfully
+[INFO  Thu 23 May 2024 01:13:47 PM MSK] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:210: Copied todos.selector.ts to clipboard
+[INFO  Thu 23 May 2024 01:14:30 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed todo.selector.ts successfully
+[INFO  Thu 23 May 2024 01:14:52 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors
+[ERROR Thu 23 May 2024 01:14:53 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors
+[ERROR Thu 23 May 2024 01:14:53 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/.. :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/..
+[ERROR Thu 23 May 2024 01:15:01 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/.. :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/..
+[ERROR Thu 23 May 2024 01:15:01 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors
+[ERROR Thu 23 May 2024 01:15:06 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors
+[ERROR Thu 23 May 2024 01:15:06 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/.. :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/..
+[ERROR Thu 23 May 2024 01:15:08 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors
+[ERROR Thu 23 May 2024 01:15:08 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/.. :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/..
+[ERROR Thu 23 May 2024 01:15:13 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors
+[ERROR Thu 23 May 2024 01:15:13 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/.. :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/..
+[WARN  Thu 23 May 2024 01:15:15 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[ERROR Thu 23 May 2024 01:15:15 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors
+[ERROR Thu 23 May 2024 01:15:15 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/.. :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/..
+[WARN  Thu 23 May 2024 01:15:16 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[ERROR Thu 23 May 2024 01:15:17 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors
+[ERROR Thu 23 May 2024 01:15:17 PM MSK] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:302: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/.. :  ENOENT: no such file or directory: /home/axl/projects/angular/ngrx-todo-app/src/app/todo/store/selectors/..
+[INFO  Thu 23 May 2024 01:33:05 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed todos.effect.ts successfully
+[WARN  Sat 25 May 2024 03:34:53 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Sat 25 May 2024 03:34:54 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[INFO  Sun 26 May 2024 11:53:12 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed todo.2.spec.cy.ts successfully
+[INFO  Sun 26 May 2024 11:53:16 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed todo.1.spec.cy.ts successfully
+[INFO  Sun 02 Jun 2024 05:47:24 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed indigo-pink.theme.scss successfully
+[INFO  Sun 02 Jun 2024 06:08:15 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ngrx-template-app/src/app/common/services/theme
+[INFO  Sun 02 Jun 2024 06:16:12 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed side-nav successfully
+[INFO  Sun 02 Jun 2024 06:16:40 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ngrx-template-app/src/app/common/components/side-nav
+[INFO  Sun 02 Jun 2024 07:41:53 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ngrx-template-app/src/app/example
+[INFO  Sun 02 Jun 2024 08:24:54 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed navbar successfully
+[INFO  Sun 02 Jun 2024 08:25:01 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed navbar.spec.cy.ts successfully
+[ERROR Sat 08 Jun 2024 08:33:43 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[INFO  Sat 08 Jun 2024 09:07:15 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ngrx-template-app/src/app/common/components/404
+[INFO  Sat 08 Jun 2024 09:59:31 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/angular-directives-reference/node_modules
+[INFO  Sat 08 Jun 2024 09:59:39 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/angular-directives-reference/dist
+[INFO  Sat 08 Jun 2024 10:21:34 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed font successfully
+[INFO  Sat 08 Jun 2024 10:21:44 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/angular-directives-reference/src/styles/font/fonts
+[INFO  Sat 08 Jun 2024 10:30:48 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed font.root.scss successfully
+[INFO  Sat 08 Jun 2024 11:35:06 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed init.js successfully
+[INFO  Sat 08 Jun 2024 12:53:35 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed replace.js successfully
+[INFO  Sat 08 Jun 2024 06:33:10 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/angular-directives-reference/src/app/directives-reference/components/ng-border
+[INFO  Sat 08 Jun 2024 10:00:20 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/angular-directives-reference/src/app/directives-reference/components/ng-while
+[WARN  Sun 09 Jun 2024 09:37:55 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[INFO  Tue 18 Jun 2024 02:28:12 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/nest/nest-template-app/src/modules/role
+[INFO  Tue 18 Jun 2024 02:29:15 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed dtos successfully
+[INFO  Tue 18 Jun 2024 02:43:34 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/nest/nest-template-app/src/modules/verification
+[INFO  Tue 18 Jun 2024 02:43:36 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/nest/nest-template-app/src/modules/case
+[INFO  Tue 18 Jun 2024 11:40:14 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed patch.controller.ts successfully

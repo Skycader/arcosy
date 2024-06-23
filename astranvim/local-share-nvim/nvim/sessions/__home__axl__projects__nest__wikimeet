@@ -1,0 +1,66 @@
+let SessionLoad = 1
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/projects/nest/wikimeet
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+let s:shortmess_save = &shortmess
+if &shortmess =~ 'A'
+  set shortmess=aoOA
+else
+  set shortmess=aoO
+endif
+badd +13 ~/projects/nest/wikimeet/src/app.service.ts
+badd +28 ~/projects/nest/wikimeet/src/app.update.ts
+badd +1364 ~/projects/nest/wikimeet/node_modules/telegraf/src/context.ts
+badd +33 ~/projects/nest/wikimeet/node_modules/@telegraf/types/settings.d.ts
+badd +10 ~/projects/nest/wikimeet/src/models/button.interface.ts
+badd +4 ~/projects/nest/wikimeet/src/app.module.ts
+badd +103 ~/projects/nest/wikimeet/node_modules/telegraf/src/button.ts
+argglobal
+%argdel
+edit ~/projects/nest/wikimeet/src/app.update.ts
+argglobal
+balt ~/projects/nest/wikimeet/src/app.service.ts
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+1,7fold
+1,12fold
+15,17fold
+22,25fold
+21,25fold
+30,33fold
+29,33fold
+14,34fold
+let &fdl = &fdl
+let s:l = 33 - ((29 * winheight(0) + 18) / 36)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 33
+normal! 0
+tabnext 1
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20
+let &shortmess = s:shortmess_save
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

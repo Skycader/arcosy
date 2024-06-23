@@ -1,0 +1,85 @@
+let SessionLoad = 1
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/projects/angular/ardon-ng
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+let s:shortmess_save = &shortmess
+if &shortmess =~ 'A'
+  set shortmess=aoOA
+else
+  set shortmess=aoO
+endif
+badd +62 ~/projects/angular/ardon-ng/src/assets/article/drenazh-i-sistema-vodootvedeniya.json
+badd +57 ~/projects/angular/ardon-ng/src/app/article/models/article.interface.ts
+badd +10 ~/projects/angular/ardon-ng/src/app/article/components/image/image.component.ts
+badd +4 ~/projects/angular/ardon-ng/src/app/article/components/article-view/article-view.component.html
+badd +13 ~/projects/angular/ardon-ng/src/app/article/components/article-view/article-view.component.ts
+badd +10 ~/projects/angular/ardon-ng/src/app/article/components/image/image.component.html
+badd +58 ~/projects/angular/ardon-ng/src/assets/article/moshchenie-dorozhek.json
+badd +5 ~/projects/angular/ardon-ng/src/app/article/components/carousel/carousel.component.html
+badd +37 ~/projects/angular/ardon-ng/src/app/article/components/carousel/carousel.component.ts
+badd +11 ~/projects/angular/ardon-ng/src/app/article/components/article-view/article-view.component.spec.ts
+badd +22 ~/projects/angular/ardon-ng/src/app/article/components/photo-viewer/photo-viewer.component.html
+badd +29 ~/projects/angular/ardon-ng/src/app/article/components/photo-viewer/photo-viewer.component.ts
+badd +11 ~/projects/angular/ardon-ng/src/app/article/services/photo-viewer.service.ts
+badd +8 ~/projects/angular/ardon-ng/src/app/article/components/ardon-cover/ardon-cover.component.ts
+badd +3 ~/projects/angular/ardon-ng/src/app/article/components/ardon-cover/ardon-cover.component.html
+badd +2 ~/projects/angular/ardon-ng/src/environments/environment.ts
+badd +39 ~/projects/angular/ardon-ng/angular.json
+badd +49 ~/projects/angular/ardon-ng/src/api/core/config/en.json
+badd +2 ~/projects/angular/ardon-ng/src/api/core/config/default.json
+argglobal
+%argdel
+edit ~/projects/angular/ardon-ng/src/api/core/config/en.json
+argglobal
+balt ~/projects/angular/ardon-ng/src/api/core/config/default.json
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+11,13fold
+15,17fold
+19,21fold
+10,22fold
+34,37fold
+39,41fold
+33,42fold
+26,43fold
+52,55fold
+57,59fold
+51,60fold
+45,61fold
+25,62fold
+66,69fold
+1,72fold
+let &fdl = &fdl
+let s:l = 36 - ((35 * winheight(0) + 23) / 47)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 36
+normal! 0
+tabnext 1
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20
+let &shortmess = s:shortmess_save
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

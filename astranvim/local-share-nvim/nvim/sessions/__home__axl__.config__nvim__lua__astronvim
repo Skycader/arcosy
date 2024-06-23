@@ -1,0 +1,137 @@
+let SessionLoad = 1
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/.config/nvim/lua/astronvim
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+let s:shortmess_save = &shortmess
+if &shortmess =~ 'A'
+  set shortmess=aoOA
+else
+  set shortmess=aoO
+endif
+badd +459 mappings.lua
+argglobal
+%argdel
+edit mappings.lua
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+9,19fold
+53,54fold
+55,57fold
+59,61fold
+63,65fold
+69,70fold
+72,73fold
+75,76fold
+79,80fold
+87,88fold
+86,90fold
+94,95fold
+93,96fold
+92,98fold
+102,104fold
+101,105fold
+100,107fold
+111,113fold
+110,114fold
+109,116fold
+85,117fold
+129,130fold
+127,132fold
+126,134fold
+125,135fold
+140,142fold
+144,146fold
+139,147fold
+151,163fold
+171,172fold
+173,174fold
+170,175fold
+169,177fold
+167,178fold
+188,189fold
+182,189fold
+198,200fold
+191,201fold
+205,207fold
+211,219fold
+220,228fold
+232,234fold
+241,242fold
+243,245fold
+247,249fold
+251,252fold
+255,256fold
+261,263fold
+265,266fold
+269,273fold
+267,274fold
+258,275fold
+257,277fold
+283,285fold
+291,292fold
+290,292fold
+296,297fold
+301,302fold
+300,303fold
+299,305fold
+311,312fold
+313,314fold
+309,315fold
+308,317fold
+238,318fold
+327,330fold
+326,332fold
+324,334fold
+336,337fold
+339,340fold
+342,343fold
+322,353fold
+365,366fold
+364,367fold
+363,369fold
+382,383fold
+381,384fold
+380,386fold
+401,402fold
+400,403fold
+399,405fold
+398,409fold
+356,410fold
+414,419fold
+437,438fold
+let &fdl = &fdl
+let s:l = 460 - ((38 * winheight(0) + 24) / 48)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 460
+normal! 016|
+tabnext 1
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20
+let &shortmess = s:shortmess_save
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+nohlsearch
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

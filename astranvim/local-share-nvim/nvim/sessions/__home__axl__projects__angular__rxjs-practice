@@ -1,0 +1,83 @@
+let SessionLoad = 1
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/projects/angular/rxjs-practice
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+let s:shortmess_save = &shortmess
+if &shortmess =~ 'A'
+  set shortmess=aoOA
+else
+  set shortmess=aoO
+endif
+badd +11 ~/projects/angular/rxjs-practice/src/app/components/slider-rx/slider-rx.component.ts
+badd +5 ~/projects/angular/rxjs-practice/src/app/components/slider-rx/slider-rx.component.html
+badd +17 ~/projects/angular/rxjs-practice/src/app/components/slider-rx/slider-rx.component.scss
+badd +1 ~/projects/angular/rxjs-practice/src/app/components/slider-rx/slider-rx.component.spec.ts
+badd +7 ~/projects/angular/rxjs-practice/src/app/pipes/render.pipe.ts
+badd +1 ~/projects/angular/rxjs-practice/src/app/app.component.html
+badd +2 ~/projects/angular/rxjs-practice/package.json
+badd +27 ~/projects/angular/rxjs-practice/angular.json
+argglobal
+%argdel
+edit ~/projects/angular/rxjs-practice/angular.json
+argglobal
+balt ~/projects/angular/rxjs-practice/package.json
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+9,11fold
+13,14fold
+16,17fold
+8,18fold
+26,38fold
+43,46fold
+48,51fold
+42,52fold
+41,54fold
+56,59fold
+40,60fold
+24,62fold
+67,68fold
+70,71fold
+66,72fold
+64,74fold
+78,79fold
+76,80fold
+84,90fold
+82,91fold
+23,92fold
+6,93fold
+5,94fold
+1,95fold
+let &fdl = &fdl
+let s:l = 27 - ((26 * winheight(0) + 23) / 47)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 27
+normal! 0
+tabnext 1
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20
+let &shortmess = s:shortmess_save
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

@@ -1,0 +1,115 @@
+let SessionLoad = 1
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/projects/nest/nestjs-telegram-file-server
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+let s:shortmess_save = &shortmess
+if &shortmess =~ 'A'
+  set shortmess=aoOA
+else
+  set shortmess=aoO
+endif
+badd +6 ~/projects/nest/nestjs-telegram-file-server/src/app.module.ts
+badd +9 ~/projects/nest/nestjs-telegram-file-server/src/app.service.ts
+badd +80 ~/projects/nest/nestjs-telegram-file-server/src/app.update.ts
+badd +6 ~/projects/nest/nestjs-telegram-file-server/src/main.ts
+badd +671 ~/projects/nest/nestjs-telegram-file-server/node_modules/telegraf/src/context.ts
+badd +279 ~/projects/nest/nestjs-telegram-file-server/node_modules/telegraf/src/telegram.ts
+badd +364 ~/projects/nest/nestjs-telegram-file-server/node_modules/telegraf/src/core/network/client.ts
+argglobal
+%argdel
+edit ~/projects/nest/nestjs-telegram-file-server/src/app.update.ts
+argglobal
+balt ~/projects/nest/nestjs-telegram-file-server/src/app.service.ts
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+4,12fold
+1,19fold
+23,25fold
+33,35fold
+38,41fold
+29,42fold
+50,52fold
+50,53fold
+49,53fold
+45,58fold
+62,63fold
+64,65fold
+61,66fold
+76,77fold
+76,78fold
+73,80fold
+70,81fold
+92,95fold
+98,101fold
+88,103fold
+109,112fold
+114,117fold
+105,119fold
+128,130fold
+134,137fold
+122,139fold
+145,148fold
+152,155fold
+85,155fold
+160,162fold
+159,162fold
+166,167fold
+168,169fold
+165,170fold
+185,187fold
+192,193fold
+191,194fold
+177,195fold
+196,197fold
+173,198fold
+211,213fold
+204,215fold
+216,217fold
+201,218fold
+224,226fold
+222,233fold
+238,241fold
+252,253fold
+252,254fold
+249,255fold
+256,257fold
+237,258fold
+263,265fold
+269,272fold
+262,272fold
+276,277fold
+22,278fold
+let &fdl = &fdl
+let s:l = 79 - ((19 * winheight(0) + 19) / 38)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 79
+normal! 0
+tabnext 1
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20
+let &shortmess = s:shortmess_save
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

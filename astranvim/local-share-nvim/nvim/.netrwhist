@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/axl/Downloads'
+let g:netrw_dirhist_8='/home/axl'
+let g:netrw_dirhist_7='/home/axl/projects'
+let g:netrw_dirhist_6='/home/axl/projects/angular'
+let g:netrw_dirhist_5='/home/axl/projects/angular/ngrx-todo-app'
+let g:netrw_dirhist_4='/home/axl'
+let g:netrw_dirhist_3='/home/axl/projects/angular/angular-blog'
+let g:netrw_dirhist_2='/home/axl'
+let g:netrw_dirhist_1='/home/axl/.config'

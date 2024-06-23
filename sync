@@ -31,6 +31,10 @@ cp ~/.config/foot/foot.ini foot
 
 rm -rf astranvim
 mkdir astranvim
+mkdir astranvim/local-share-nvim
 cp -r ~/.config/nvim astranvim
+cp -r ~/.local/share/nvim astranvim/local-share-nvim
+
+#10. Wallpapers
 cp -r ~/Wallpapers/ .
 

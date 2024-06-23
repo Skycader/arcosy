@@ -1,0 +1,99 @@
+let SessionLoad = 1
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/projects/ardon-engine/ardon-frontend/src/api/article
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+let s:shortmess_save = &shortmess
+if &shortmess =~ 'A'
+  set shortmess=aoOA
+else
+  set shortmess=aoO
+endif
+badd +1 drenazh-i-sistema-vodootvedeniya.json
+argglobal
+%argdel
+edit drenazh-i-sistema-vodootvedeniya.json
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+9,10fold
+8,11fold
+6,12fold
+17,20fold
+16,21fold
+14,22fold
+27,30fold
+26,31fold
+24,32fold
+37,39fold
+36,40fold
+34,41fold
+45,47fold
+43,48fold
+53,54fold
+52,55fold
+50,56fold
+60,62fold
+58,63fold
+68,69fold
+67,70fold
+65,71fold
+76,78fold
+75,79fold
+73,80fold
+85,86fold
+84,87fold
+82,88fold
+92,94fold
+90,95fold
+100,101fold
+99,102fold
+97,103fold
+108,112fold
+107,113fold
+105,114fold
+119,120fold
+118,121fold
+116,122fold
+127,129fold
+126,130fold
+124,131fold
+136,139fold
+135,140fold
+133,141fold
+5,142fold
+1,143fold
+let &fdl = &fdl
+let s:l = 144 - ((10 * winheight(0) + 5) / 11)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 144
+normal! 0
+tabnext 1
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20
+let &shortmess = s:shortmess_save
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+nohlsearch
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

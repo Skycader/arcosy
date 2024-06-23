@@ -1,0 +1,67 @@
+let SessionLoad = 1
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/projects/angular/guess-the-number
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+let s:shortmess_save = &shortmess
+if &shortmess =~ 'A'
+  set shortmess=aoOA
+else
+  set shortmess=aoO
+endif
+badd +33 ~/projects/angular/guess-the-number/angular.json
+badd +3 ~/projects/angular/guess-the-number/src/app/components/navbar/navbar.component.html
+badd +2 ~/projects/angular/guess-the-number/src/app/app.component.html
+badd +10 ~/projects/angular/guess-the-number/src/index.html
+badd +1 ~/projects/angular/guess-the-number/src/assets/svg/game.svg
+badd +1 ~/projects/angular/guess-the-number/src/app/layouts/main/main.component.html
+badd +1 ~/projects/angular/guess-the-number/src/app/layouts/main/main.component.scss
+badd +1 ~/projects/angular/guess-the-number/src/app/app.component.scss
+badd +2 ~/projects/angular/guess-the-number/src/styles.scss
+badd +1 ~/projects/angular/guess-the-number/src/app/components/welcome/welcome.component.html
+badd +1 ~/projects/angular/guess-the-number/src/app/layouts/main/main.component.spec.ts
+badd +2 ~/projects/angular/guess-the-number/src/app/components/navbar/navbar.component.scss
+badd +2 ~/projects/angular/guess-the-number/src/app/components/welcome/welcome.component.scss
+badd +11 ~/projects/angular/guess-the-number/src/app/components/welcome/welcome.component.ts
+argglobal
+%argdel
+edit ~/projects/angular/guess-the-number/src/app/components/welcome/welcome.component.scss
+argglobal
+balt ~/projects/angular/guess-the-number/src/app/components/welcome/welcome.component.html
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+1,2fold
+5,6fold
+let &fdl = &fdl
+let s:l = 2 - ((1 * winheight(0) + 23) / 47)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 2
+normal! 0
+tabnext 1
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20
+let &shortmess = s:shortmess_save
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

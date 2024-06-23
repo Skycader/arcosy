@@ -1,0 +1,102 @@
+let SessionLoad = 1
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/projects/earth
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+let s:shortmess_save = &shortmess
+if &shortmess =~ 'A'
+  set shortmess=aoOA
+else
+  set shortmess=aoO
+endif
+badd +15 index.js
+argglobal
+%argdel
+edit index.js
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+37,40fold
+57,69fold
+77,96fold
+97,109fold
+49,110fold
+48,118fold
+126,132fold
+125,132fold
+149,158fold
+144,159fold
+162,168fold
+161,170fold
+172,178fold
+172,179fold
+182,187fold
+182,188fold
+235,236fold
+242,243fold
+242,244fold
+255,256fold
+255,257fold
+252,261fold
+238,263fold
+268,273fold
+280,282fold
+286,288fold
+289,290fold
+278,297fold
+305,308fold
+347,352fold
+359,363fold
+359,364fold
+357,365fold
+366,368fold
+371,372fold
+371,373fold
+355,373fold
+355,374fold
+377,378fold
+377,379fold
+388,392fold
+388,393fold
+375,393fold
+375,394fold
+395,398fold
+395,399fold
+418,420fold
+417,421fold
+414,423fold
+330,431fold
+330,432fold
+let &fdl = &fdl
+let s:l = 15 - ((14 * winheight(0) + 23) / 47)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 15
+normal! 014|
+tabnext 1
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20
+let &shortmess = s:shortmess_save
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

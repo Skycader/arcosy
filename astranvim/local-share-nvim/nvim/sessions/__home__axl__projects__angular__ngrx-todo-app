@@ -1,0 +1,122 @@
+let SessionLoad = 1
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/projects/angular/ngrx-todo-app
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+let s:shortmess_save = &shortmess
+if &shortmess =~ 'A'
+  set shortmess=aoOA
+else
+  set shortmess=aoO
+endif
+badd +39 ~/projects/angular/ngrx-todo-app/src/app/todo/components/new-todo/new-todo.component.html
+badd +14 ~/projects/angular/ngrx-todo-app/src/app/todo/components/new-todo/new-todo.component.ts
+badd +30 ~/projects/angular/ngrx-todo-app/src/app/todo/components/todo-item/todo-item.component.ts
+badd +6 ~/projects/angular/ngrx-todo-app/src/app/todo/database/db.ts
+badd +1 ~/projects/angular/ngrx-todo-app/src/app/todo/store/todo.reducer.ts
+badd +0 ~/projects/angular/ngrx-todo-app/src/app/todo/store/effects/todos.effect.ts
+argglobal
+%argdel
+edit ~/projects/angular/ngrx-todo-app/src/app/todo/store/effects/todos.effect.ts
+argglobal
+balt ~/projects/angular/ngrx-todo-app/src/app/todo/store/todo.reducer.ts
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+2,5fold
+11,14fold
+16,19fold
+21,24fold
+26,29fold
+1,30fold
+34,38fold
+45,46fold
+45,47fold
+48,49fold
+48,50fold
+44,51fold
+43,51fold
+43,52fold
+41,53fold
+40,53fold
+40,54fold
+61,62fold
+61,63fold
+64,65fold
+64,66fold
+60,67fold
+59,67fold
+59,68fold
+57,69fold
+56,69fold
+56,70fold
+74,79fold
+80,81fold
+80,82fold
+73,83fold
+72,83fold
+72,84fold
+91,92fold
+91,93fold
+94,95fold
+94,96fold
+90,97fold
+89,97fold
+89,98fold
+87,99fold
+86,99fold
+86,100fold
+107,108fold
+107,109fold
+110,111fold
+110,112fold
+106,113fold
+105,113fold
+105,114fold
+103,115fold
+102,115fold
+102,116fold
+123,124fold
+123,125fold
+126,127fold
+126,128fold
+122,129fold
+121,129fold
+121,130fold
+119,131fold
+118,131fold
+118,132fold
+134,136fold
+33,137fold
+let &fdl = &fdl
+let s:l = 1 - ((0 * winheight(0) + 20) / 40)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 1
+normal! 0
+tabnext 1
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20
+let &shortmess = s:shortmess_save
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :
