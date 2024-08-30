@@ -1,0 +1,21 @@
+
+#!/usr/bin/env bash
+
+vpn="d.i.ustimeko-dev"
+
+if [[ "${1}" == "status" ]]; then
+	if nmcli -t con show $vpn | grep -qi 'connected'; then
+		echo "VPN📶"
+	else
+		echo "VPN🔳"
+	fi
+
+elif [[ "${1}" == "toggle" ]]; then
+	if nmcli -t con show $vpn | grep -qi 'VPN connected'; then
+		nmcli con down $vpn
+		notify-send "VPN Down"
+	else
+		nmcli con up $vpn
+		notify-send "VPN Active"
+	fi
+fi

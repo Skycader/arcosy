@@ -13,10 +13,10 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +0 update-20-06
+badd +0 ng18
 argglobal
 %argdel
-edit update-20-06
+edit ng18
 argglobal
 setlocal fdm=manual
 setlocal fde=0
@@ -27,13 +27,20 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-1,67fold
+9,26fold
+31,35fold
+39,40fold
+45,46fold
+50,52fold
+54,55fold
+60,61fold
+65,66fold
 let &fdl = &fdl
-let s:l = 1 - ((0 * winheight(0) + 23) / 47)
+let s:l = 48 - ((46 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 48
 normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'

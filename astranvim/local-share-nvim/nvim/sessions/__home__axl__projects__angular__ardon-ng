@@ -13,30 +13,14 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +62 ~/projects/angular/ardon-ng/src/assets/article/drenazh-i-sistema-vodootvedeniya.json
-badd +57 ~/projects/angular/ardon-ng/src/app/article/models/article.interface.ts
-badd +10 ~/projects/angular/ardon-ng/src/app/article/components/image/image.component.ts
-badd +4 ~/projects/angular/ardon-ng/src/app/article/components/article-view/article-view.component.html
-badd +13 ~/projects/angular/ardon-ng/src/app/article/components/article-view/article-view.component.ts
-badd +10 ~/projects/angular/ardon-ng/src/app/article/components/image/image.component.html
-badd +58 ~/projects/angular/ardon-ng/src/assets/article/moshchenie-dorozhek.json
-badd +5 ~/projects/angular/ardon-ng/src/app/article/components/carousel/carousel.component.html
-badd +37 ~/projects/angular/ardon-ng/src/app/article/components/carousel/carousel.component.ts
-badd +11 ~/projects/angular/ardon-ng/src/app/article/components/article-view/article-view.component.spec.ts
-badd +22 ~/projects/angular/ardon-ng/src/app/article/components/photo-viewer/photo-viewer.component.html
-badd +29 ~/projects/angular/ardon-ng/src/app/article/components/photo-viewer/photo-viewer.component.ts
-badd +11 ~/projects/angular/ardon-ng/src/app/article/services/photo-viewer.service.ts
-badd +8 ~/projects/angular/ardon-ng/src/app/article/components/ardon-cover/ardon-cover.component.ts
-badd +3 ~/projects/angular/ardon-ng/src/app/article/components/ardon-cover/ardon-cover.component.html
-badd +2 ~/projects/angular/ardon-ng/src/environments/environment.ts
-badd +39 ~/projects/angular/ardon-ng/angular.json
-badd +49 ~/projects/angular/ardon-ng/src/api/core/config/en.json
-badd +2 ~/projects/angular/ardon-ng/src/api/core/config/default.json
+badd +26 ~/projects/angular/ardon-ng/src/app/app.module.ts
+badd +20 ~/projects/angular/ardon-ng/src/app/app-routing.module.ts
+badd +0 ~/projects/angular/ardon-ng/node_modules/@angular/router/index.d.ts
 argglobal
 %argdel
-edit ~/projects/angular/ardon-ng/src/api/core/config/en.json
+edit ~/projects/angular/ardon-ng/node_modules/@angular/router/index.d.ts
 argglobal
-balt ~/projects/angular/ardon-ng/src/api/core/config/default.json
+balt ~/projects/angular/ardon-ng/src/app/app-routing.module.ts
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -46,28 +30,13 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-11,13fold
-15,17fold
-19,21fold
-10,22fold
-34,37fold
-39,41fold
-33,42fold
-26,43fold
-52,55fold
-57,59fold
-51,60fold
-45,61fold
-25,62fold
-66,69fold
-1,72fold
 let &fdl = &fdl
-let s:l = 36 - ((35 * winheight(0) + 23) / 47)
+let s:l = 1986 - ((21 * winheight(0) + 16) / 32)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 36
-normal! 0
+keepjumps 1986
+normal! 031|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

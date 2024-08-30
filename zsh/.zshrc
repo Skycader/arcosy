@@ -149,19 +149,19 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#X [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-source /usr/share/nvm/init-nvm.sh
+#X source /usr/share/nvm/init-nvm.sh
 
 # node version manager
-[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
-source /usr/share/nvm/nvm.sh
-source /usr/share/nvm/bash_completion
-source /usr/share/nvm/install-nvm-exec
-
+#X [ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
+#X source /usr/share/nvm/nvm.sh
+#X source /usr/share/nvm/bash_completion
+#X source /usr/share/nvm/install-nvm-exec
+#
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+#X source <(ng completion script)
+#X [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

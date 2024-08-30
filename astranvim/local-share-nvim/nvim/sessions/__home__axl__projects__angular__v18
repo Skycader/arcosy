@@ -3,7 +3,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/vpn
+cd ~/projects/angular/v18
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -13,10 +13,10 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +0 down
+badd +75 ~/projects/angular/v18/angular.json
 argglobal
 %argdel
-edit down
+edit ~/projects/angular/v18/angular.json
 argglobal
 setlocal fdm=manual
 setlocal fde=0
@@ -27,13 +27,43 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
+9,11fold
+13,14fold
+16,17fold
+8,18fold
+34,36fold
+33,37fold
+26,40fold
+45,48fold
+50,53fold
+44,54fold
+43,56fold
+58,61fold
+42,62fold
+24,64fold
+69,70fold
+72,73fold
+68,74fold
+66,76fold
+78,79fold
+88,90fold
+87,91fold
+83,94fold
+81,95fold
+99,100fold
+97,101fold
+23,102fold
+6,103fold
+5,104fold
+106,107fold
+1,108fold
 let &fdl = &fdl
-let s:l = 1 - ((0 * winheight(0) + 5) / 11)
+let s:l = 95 - ((16 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
-normal! 050|
+keepjumps 95
+normal! 011|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

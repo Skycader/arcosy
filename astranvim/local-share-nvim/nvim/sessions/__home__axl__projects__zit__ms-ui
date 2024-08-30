@@ -3,7 +3,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/vpn
+cd ~/projects/zit/ms-ui
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -13,10 +13,13 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +0 down
+badd +19 ~/projects/zit/ms-ui/src/libs/common/src/index.ts
+badd +12 ~/projects/zit/ms-ui/src/libs/common/src/lib/common/environments/environment.dev.ts
+badd +44 src/libs/common/src/lib/common/contracts/toggle-config.ts
+badd +47 src/libs/common/src/lib/common/pages/flight-search/flight-search.component.html
 argglobal
 %argdel
-edit down
+edit src/libs/common/src/lib/common/contracts/toggle-config.ts
 argglobal
 setlocal fdm=manual
 setlocal fde=0
@@ -27,13 +30,24 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
+2,4fold
+8,10fold
+14,16fold
+20,23fold
+27,29fold
+33,38fold
+42,45fold
+48,51fold
+54,57fold
+60,64fold
+67,70fold
 let &fdl = &fdl
-let s:l = 1 - ((0 * winheight(0) + 5) / 11)
+let s:l = 44 - ((18 * winheight(0) + 19) / 38)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
-normal! 050|
+keepjumps 44
+normal! 01|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

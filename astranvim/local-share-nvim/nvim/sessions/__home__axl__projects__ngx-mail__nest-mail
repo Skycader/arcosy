@@ -1,0 +1,97 @@
+let SessionLoad = 1
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/projects/ngx-mail/nest-mail
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+let s:shortmess_save = &shortmess
+if &shortmess =~ 'A'
+  set shortmess=aoOA
+else
+  set shortmess=aoO
+endif
+badd +15 ~/projects/ngx-mail/nest-mail/src/modules/auth/entities/user.entity.ts
+badd +6 ~/projects/ngx-mail/nest-mail/src/modules/mail/mail.module.ts
+badd +15 ~/projects/ngx-mail/nest-mail/src/modules/mail/entities/mail.entity.ts
+badd +1 ~/projects/ngx-mail/nest-mail/src/modules/auth/models/user.model.ts
+badd +1 ~/projects/ngx-mail/nest-mail/src/modules/auth/controllers/get/get.controller.ts
+badd +25 ~/projects/ngx-mail/nest-mail/src/modules/mail/controllers/get/get.controller.ts
+badd +13 ~/projects/ngx-mail/nest-mail/src/modules/auth/services/auth.service.ts
+badd +3 ~/projects/ngx-mail/nest-mail/src/modules/mail/services/mail.service.ts
+badd +67 ~/projects/ngx-mail/nest-mail/src/modules/auth/repositories/user.repository.ts
+badd +12 ~/projects/ngx-mail/nest-mail/src/modules/mail/controllers/post/post.controller.ts
+badd +1 ~/projects/ngx-mail/nest-mail/src/modules/mail/models/letter.model.ts
+argglobal
+%argdel
+edit ~/projects/ngx-mail/nest-mail/src/modules/auth/repositories/user.repository.ts
+argglobal
+balt ~/projects/ngx-mail/nest-mail/src/modules/mail/controllers/post/post.controller.ts
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+1,18fold
+22,26fold
+30,32fold
+30,33fold
+29,36fold
+40,41fold
+40,42fold
+39,45fold
+61,63fold
+64,66fold
+48,67fold
+81,83fold
+84,86fold
+70,87fold
+94,95fold
+94,96fold
+98,99fold
+100,101fold
+90,102fold
+105,106fold
+120,121fold
+120,122fold
+124,128fold
+124,129fold
+131,133fold
+109,134fold
+138,140fold
+138,141fold
+137,153fold
+157,159fold
+157,160fold
+156,165fold
+169,173fold
+168,174fold
+21,175fold
+let &fdl = &fdl
+let s:l = 67 - ((27 * winheight(0) + 19) / 38)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 67
+normal! 0
+tabnext 1
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20
+let &shortmess = s:shortmess_save
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

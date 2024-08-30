@@ -1,0 +1,72 @@
+let SessionLoad = 1
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/projects/angular/ng-signals
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+let s:shortmess_save = &shortmess
+if &shortmess =~ 'A'
+  set shortmess=aoOA
+else
+  set shortmess=aoO
+endif
+badd +6 ~/projects/angular/ng-signals/src/app/app.component.html
+badd +9 ~/projects/angular/ng-signals/src/app/app.component.ts
+badd +27 ~/projects/angular/ng-signals/src/app/counter/components/counter/counter.component.ts
+badd +14 ~/projects/angular/ng-signals/src/app/counter/components/counter/counter.component.html
+badd +1 ~/projects/angular/ng-signals/src/styles.scss
+badd +1 ~/projects/angular/ng-signals/src/app/counter/components/counter/counter.component.scss
+badd +5 ~/projects/angular/ng-signals/src/main.ts
+badd +12 ~/projects/angular/ng-signals/src/app/app.config.ts
+badd +7719 ~/projects/angular/ng-signals/node_modules/@angular/core/index.d.ts
+badd +50 ~/projects/angular/ng-signals/angular.json
+badd +1 ~/projects/angular/ng-signals/README.md
+badd +1 ~/projects/angular/ng-signals/src/app/counter/components/counter/counter.component.spec.ts
+badd +1 ~/projects/angular/ng-signals/src/app/app.component.scss
+badd +2 ~/projects/angular/ng-signals/src/index.html
+badd +17 ~/projects/angular/ng-signals/src/app/posts/components/posts/posts.component.ts
+badd +6 ~/projects/angular/ng-signals/src/app/posts/models/post.class.ts
+badd +5 ~/projects/angular/ng-signals/src/app/posts/models/post.model.ts
+badd +4 ~/projects/angular/ng-signals/src/app/posts/components/posts/posts.component.html
+badd +1 ~/projects/angular/ng-signals/src/app/posts/components/post/post.component.html
+badd +17 ~/projects/angular/ng-signals/src/app/posts/components/post/post.component.ts
+badd +3 ~/projects/angular/ng-signals/src/app/posts/components/posts/posts.component.scss
+badd +1 ~/projects/angular/ng-signals/src/app/posts/components/post/post.component.spec.ts
+argglobal
+%argdel
+edit ~/projects/angular/ng-signals/src/app/app.component.html
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let &fdl = &fdl
+let s:l = 2 - ((1 * winheight(0) + 19) / 39)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 2
+normal! 01|
+tabnext 1
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20
+let &shortmess = s:shortmess_save
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

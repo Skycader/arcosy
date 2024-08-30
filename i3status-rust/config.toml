@@ -29,6 +29,14 @@ full = " $title.str(max_w:15) |"
 short = " $title.str(max_w:10) |"
 
 [[block]]
+block = "custom"
+command = "/home/axl/.local/bin/custom/vpn status"
+interval = 1
+[[block.click]]
+button = "left"
+cmd = "/home/axl/.local/bin/custom/vpn toggle"
+
+[[block]]
 block = "cpu"
 
 [[block]]

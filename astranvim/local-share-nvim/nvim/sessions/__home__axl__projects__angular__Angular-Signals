@@ -1,0 +1,87 @@
+let SessionLoad = 1
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/projects/angular/Angular-Signals
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+let s:shortmess_save = &shortmess
+if &shortmess =~ 'A'
+  set shortmess=aoOA
+else
+  set shortmess=aoO
+endif
+badd +25 ~/projects/angular/Angular-Signals/taskList-end/src/app/users/user-list/user-list.component.ts
+badd +26 ~/projects/angular/Angular-Signals/taskList-end/src/app/users/user.service.ts
+badd +82 ~/projects/angular/Angular-Signals/taskList-end/src/app/todos/todo.service.ts
+badd +14 ~/projects/angular/Angular-Signals/taskList-end/src/app/users/user-list/user-list.component.html
+badd +2527 ~/projects/angular/Angular-Signals/taskList-end/node_modules/@angular/core/index.d.ts
+badd +7 ~/projects/angular/Angular-Signals/taskList-end/src/app/todos/user-todos/user-todos.component.html
+badd +21 ~/projects/angular/Angular-Signals/taskList-end/src/app/todos/user-todos/user-todos.component.ts
+argglobal
+%argdel
+edit ~/projects/angular/Angular-Signals/taskList-end/src/app/todos/todo.service.ts
+argglobal
+balt ~/projects/angular/Angular-Signals/taskList-end/src/app/users/user.service.ts
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+1,7fold
+10,13fold
+1,17fold
+19,20fold
+19,21fold
+28,37fold
+44,45fold
+44,46fold
+43,49fold
+40,50fold
+40,51fold
+53,60fold
+66,70fold
+63,71fold
+63,72fold
+74,78fold
+80,81fold
+80,82fold
+85,87fold
+85,88fold
+84,89fold
+83,89fold
+83,90fold
+79,92fold
+93,94fold
+97,114fold
+116,120fold
+115,121fold
+22,122fold
+let &fdl = &fdl
+let s:l = 78 - ((18 * winheight(0) + 16) / 33)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 78
+normal! 0
+tabnext 1
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20
+let &shortmess = s:shortmess_save
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if filereadable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &g:so = s:so_save | let &g:siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :

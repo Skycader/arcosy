@@ -13,10 +13,10 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +5 ex20.solution.js
+badd +7 ex8.js
 argglobal
 %argdel
-edit ex20.solution.js
+edit ex8.js
 argglobal
 setlocal fdm=manual
 setlocal fde=0
@@ -28,23 +28,14 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 1,3fold
-9,10fold
-9,11fold
-7,11fold
-14,16fold
-19,20fold
-19,21fold
-17,21fold
-26,27fold
-26,28fold
-24,28fold
+6,7fold
 let &fdl = &fdl
-let s:l = 14 - ((13 * winheight(0) + 23) / 47)
+let s:l = 7 - ((6 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 14
-normal! 027|
+keepjumps 7
+normal! 031|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
@@ -57,7 +48,6 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
-nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :

@@ -13,23 +13,17 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +58 ~/projects/angular/ngrx-template-app/package.json
-badd +14 ~/projects/angular/ngrx-template-app/tsconfig.json
-badd +16 ~/projects/angular/ngrx-template-app/src/config/app.config.ts
-badd +3 ~/projects/angular/ngrx-template-app/init.app.config
-badd +5 ~/projects/angular/ngrx-template-app/src/index.html
-badd +6 ~/projects/angular/ngrx-template-app/src/styles/font/roboto.scss
-badd +206 ~/projects/angular/ngrx-template-app/src/styles/font/material.scss
-badd +11 ~/projects/angular/ngrx-template-app/src/styles/root.scss
-badd +2 ~/projects/angular/ngrx-template-app/src/styles/font/font.root.scss
-badd +10 ~/projects/angular/ngrx-template-app/src/config/init.js
-badd +13 ~/projects/angular/ngrx-template-app/src/config/replace.js
-badd +6 ~/projects/angular/ngrx-template-app/angular.json
+badd +11 ~/projects/angular/ngrx-template-app/src/app/common/common.module.ts
+badd +10 ~/projects/angular/ngrx-template-app/src/app/common/components/footer/footer.component.ts
+badd +104 ~/projects/angular/ngrx-template-app/angular.json
+badd +11 ~/projects/angular/ngrx-template-app/src/app/auth/store/auth.selector.ts
+badd +38 ~/projects/angular/ngrx-template-app/src/app/auth/auth.module.ts
+badd +0 ~/projects/angular/ngrx-template-app/src/app/auth/utils/guards/is-anonymous.guard.ts
 argglobal
 %argdel
-edit ~/projects/angular/ngrx-template-app/package.json
+edit ~/projects/angular/ngrx-template-app/src/app/auth/utils/guards/is-anonymous.guard.ts
 argglobal
-balt ~/projects/angular/ngrx-template-app/src/config/init.js
+balt ~/projects/angular/ngrx-template-app/src/app/auth/auth.module.ts
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -39,18 +33,21 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-4,17fold
-20,28fold
-19,29fold
-32,60fold
-62,75fold
-1,76fold
+2,6fold
+12,14fold
+1,15fold
+19,22fold
+31,32fold
+31,33fold
+29,34fold
+25,34fold
+18,35fold
 let &fdl = &fdl
-let s:l = 9 - ((8 * winheight(0) + 15) / 31)
+let s:l = 18 - ((15 * winheight(0) + 17) / 35)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 9
+keepjumps 18
 normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'

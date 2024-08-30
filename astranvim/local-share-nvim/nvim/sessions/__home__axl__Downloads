@@ -13,10 +13,10 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +0 config.inc.php
+badd +0 400.txt
 argglobal
 %argdel
-edit config.inc.php
+edit 400.txt
 argglobal
 setlocal fdm=manual
 setlocal fde=0

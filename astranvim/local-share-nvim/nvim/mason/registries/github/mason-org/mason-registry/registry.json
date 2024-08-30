@@ -313,7 +313,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/ansible-lint@24.6.0",
+      "id": "pkg:pypi/ansible-lint@24.6.1",
       "supported_platforms": [
         "unix"
       ]
@@ -523,7 +523,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40ast-grep/cli@0.23.0"
+      "id": "pkg:npm/%40ast-grep/cli@0.23.1"
     },
     "bin": {
       "ast-grep": "npm:ast-grep",
@@ -591,7 +591,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:pypi/autopep8@2.3.0"
+      "id": "pkg:pypi/autopep8@2.3.1"
     },
     "bin": {
       "autopep8": "pypi:autopep8"
@@ -1095,7 +1095,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/bufbuild/buf@v1.33.0",
+      "id": "pkg:github/bufbuild/buf@v1.34.0",
       "asset": [
         {
           "target": "darwin_x64",
@@ -1324,7 +1324,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/cfn-lint@1.3.1"
+      "id": "pkg:pypi/cfn-lint@1.3.3"
     },
     "bin": {
       "cfn-lint": "pypi:cfn-lint"
@@ -1525,7 +1525,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:pypi/clang-format@18.1.6"
+      "id": "pkg:pypi/clang-format@18.1.7"
     },
     "bin": {
       "clang-format": "pypi:clang-format"
@@ -2381,7 +2381,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:nuget/csharp-ls@0.13.0"
+      "id": "pkg:nuget/csharp-ls@0.14.0"
     },
     "bin": {
       "csharp-ls": "nuget:csharp-ls"
@@ -4320,7 +4320,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:cargo/gitlab-ci-ls@0.19.0"
+      "id": "pkg:cargo/gitlab-ci-ls@0.19.1"
     },
     "bin": {
       "gitlab-ci-ls": "cargo:gitlab-ci-ls"
@@ -5084,7 +5084,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/graphql-language-service-cli@3.4.0"
+      "id": "pkg:npm/graphql-language-service-cli@3.4.1"
     },
     "bin": {
       "graphql-lsp": "npm:graphql-lsp"
@@ -6543,7 +6543,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:cargo/lelwel@0.6.1?features=lsp,cli"
+      "id": "pkg:cargo/lelwel@0.6.2?features=lsp,cli"
     },
     "bin": {
       "lelwel-ls": "cargo:lelwel-ls",
@@ -6977,7 +6977,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/JohnnyMorganz/luau-lsp@1.29.1",
+      "id": "pkg:github/JohnnyMorganz/luau-lsp@1.30.0",
       "asset": [
         {
           "target": [
@@ -7349,7 +7349,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40mdx-js/language-server@0.4.7"
+      "id": "pkg:npm/%40mdx-js/language-server@0.4.9"
     },
     "bin": {
       "mdx-language-server": "npm:mdx-language-server"
@@ -7619,7 +7619,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:cargo/neocmakelsp@0.7.5"
+      "id": "pkg:cargo/neocmakelsp@0.7.6"
     },
     "bin": {
       "neocmakelsp": "cargo:neocmakelsp"
@@ -10581,7 +10581,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/%40shopify/cli@3.62.0"
+      "id": "pkg:npm/%40shopify/cli@3.63.0"
     },
     "bin": {
       "shopify": "npm:shopify"
@@ -11138,7 +11138,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/sorbet@0.5.11435",
+      "id": "pkg:gem/sorbet@0.5.11444",
       "supported_platforms": [
         "unix"
       ]
@@ -12103,7 +12103,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/latex-lsp/texlab@v5.16.1",
+      "id": "pkg:github/latex-lsp/texlab@v5.17.0",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -12529,7 +12529,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/trufflesecurity/trufflehog@v3.78.1",
+      "id": "pkg:github/trufflesecurity/trufflehog@v3.78.2",
       "asset": [
         {
           "target": "darwin_x64",
@@ -12768,7 +12768,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/crate-ci/typos@v1.22.7",
+      "id": "pkg:github/crate-ci/typos@v1.22.9",
       "asset": [
         {
           "target": "darwin_x64",
@@ -13025,7 +13025,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/daveshanley/vacuum@v0.10.0",
+      "id": "pkg:github/daveshanley/vacuum@v0.10.1",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -13522,7 +13522,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40vtsls/language-server@0.2.3"
+      "id": "pkg:npm/%40vtsls/language-server@0.2.4"
     },
     "schemas": {
       "lsp": "https://raw.githubusercontent.com/yioneko/vtsls/server-v{{version}}/packages/service/configuration.schema.json"
@@ -13545,7 +13545,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40vue/language-server@2.0.21",
+      "id": "pkg:npm/%40vue/language-server@2.0.22",
       "extra_packages": [
         "typescript"
       ]

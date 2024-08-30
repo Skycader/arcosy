@@ -211,3 +211,44 @@
 [INFO  Tue 18 Jun 2024 02:43:34 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/nest/nest-template-app/src/modules/verification
 [INFO  Tue 18 Jun 2024 02:43:36 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/nest/nest-template-app/src/modules/case
 [INFO  Tue 18 Jun 2024 11:40:14 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed patch.controller.ts successfully
+[ERROR Sat 29 Jun 2024 03:36:59 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[INFO  Sun 30 Jun 2024 05:39:08 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed common.scss successfully
+[INFO  Sun 30 Jun 2024 09:35:38 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/ngrx-template-app/src/app/auth/guards
+[ERROR Sun 30 Jun 2024 09:35:45 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[ERROR Sun 30 Jun 2024 10:52:53 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[ERROR Sun 30 Jun 2024 10:53:08 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[ERROR Sun 30 Jun 2024 11:58:39 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[INFO  Tue 02 Jul 2024 08:10:58 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/ngx-mail/nest-mail/src/mail
+[INFO  Tue 02 Jul 2024 08:29:10 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/ngx-mail/nest-mail/src/modules/mail/services/mail
+[INFO  Tue 02 Jul 2024 08:29:31 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Tue 02 Jul 2024 08:29:44 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/ngx-mail/nest-mail/src/modules/mail/services/mail
+[INFO  Tue 02 Jul 2024 08:44:25 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed letter.model.ts successfully
+[INFO  Wed 03 Jul 2024 01:17:41 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/ng-app
+[INFO  Wed 03 Jul 2024 01:17:42 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/ng-app-e2e
+[INFO  Wed 03 Jul 2024 01:18:43 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Wed 03 Jul 2024 01:33:57 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/ng-mail-e2e
+[INFO  Wed 03 Jul 2024 01:34:03 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/nest-mail-e2e
+[INFO  Wed 03 Jul 2024 01:37:47 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:571: Renamed project.json successfully
+[INFO  Wed 03 Jul 2024 02:03:19 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Wed 03 Jul 2024 02:19:32 PM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: false
+[INFO  Wed 03 Jul 2024 02:21:41 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/ng-mail
+[INFO  Wed 03 Jul 2024 02:21:42 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/ng-app-e2e
+[INFO  Wed 03 Jul 2024 02:21:43 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/ng-app
+[INFO  Wed 03 Jul 2024 02:34:21 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/ng-mail
+[INFO  Wed 03 Jul 2024 02:35:44 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/ng-mail
+[INFO  Wed 03 Jul 2024 02:35:50 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/ng-app
+[INFO  Wed 03 Jul 2024 02:35:51 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/ng-app-e2e
+[INFO  Wed 03 Jul 2024 04:08:52 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/nest-mail/src/app/modules/mail
+[INFO  Wed 03 Jul 2024 04:12:36 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/nest-mail/src3
+[INFO  Wed 03 Jul 2024 04:15:18 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/nest-mail/src/app/modules/files
+[INFO  Wed 03 Jul 2024 04:15:19 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/apps/nest-mail/src/app/modules/captcha
+[WARN  Wed 03 Jul 2024 04:46:36 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[WARN  Wed 03 Jul 2024 04:46:37 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/setup/init.lua:305: Cannot close because one of the files is modified. Please save or discard changes.
+[INFO  Thu 04 Jul 2024 10:57:30 AM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/vodrion/database
+[INFO  Thu 04 Jul 2024 10:58:39 AM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[ERROR Thu 04 Jul 2024 11:15:13 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[ERROR Thu 04 Jul 2024 11:15:21 AM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[INFO  Mon 08 Jul 2024 10:35:10 AM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[INFO  Mon 08 Jul 2024 10:36:23 AM MSK] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:232: Toggling hidden files: true
+[ERROR Mon 08 Jul 2024 03:16:29 PM MSK] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:675: Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(edit):E325: ATTENTION
+[INFO  Mon 19 Aug 2024 10:29:59 PM MSK] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:490: Deleted directory  /home/axl/projects/angular/cryptonote/src/app/components/note-area

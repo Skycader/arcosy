@@ -81,6 +81,7 @@ set $term footclient
 for_window [app_id="^launcher$"] floating enable, sticky enable, resize set 30 ppt 60 ppt, border pixel 10
 for_window [app_id="^floatterminal$"] floating enable, sticky enable, resize set 30 ppt 30 ppt
 for_window [app_id="^htop$"] floating enable, resize set 30 ppt 30 ppt
+for_window [app_id="pavucontrol"] floating enable, resize set 60 ppt 60 ppt
 for_window [app_id="^kitty$"] floating enable, resize set 40 ppt 40 ppt
 for_window [app_id="^cal2$"] move position cursor, floating enable, sticky enable, resize set 12 ppt 20 ppt, border pixel 2
 #bindsym f10 exec "footclient -a launcher /usr/bin/htop"

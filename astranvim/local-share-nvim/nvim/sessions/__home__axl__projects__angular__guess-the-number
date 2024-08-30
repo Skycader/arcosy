@@ -13,25 +13,18 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +33 ~/projects/angular/guess-the-number/angular.json
-badd +3 ~/projects/angular/guess-the-number/src/app/components/navbar/navbar.component.html
-badd +2 ~/projects/angular/guess-the-number/src/app/app.component.html
-badd +10 ~/projects/angular/guess-the-number/src/index.html
-badd +1 ~/projects/angular/guess-the-number/src/assets/svg/game.svg
-badd +1 ~/projects/angular/guess-the-number/src/app/layouts/main/main.component.html
-badd +1 ~/projects/angular/guess-the-number/src/app/layouts/main/main.component.scss
-badd +1 ~/projects/angular/guess-the-number/src/app/app.component.scss
-badd +2 ~/projects/angular/guess-the-number/src/styles.scss
-badd +1 ~/projects/angular/guess-the-number/src/app/components/welcome/welcome.component.html
-badd +1 ~/projects/angular/guess-the-number/src/app/layouts/main/main.component.spec.ts
-badd +2 ~/projects/angular/guess-the-number/src/app/components/navbar/navbar.component.scss
-badd +2 ~/projects/angular/guess-the-number/src/app/components/welcome/welcome.component.scss
-badd +11 ~/projects/angular/guess-the-number/src/app/components/welcome/welcome.component.ts
+badd +16 ~/projects/angular/guess-the-number/src/app/main/main.module.ts
+badd +24 src/app/main/components/welcome/welcome.component.html
+badd +21 ~/projects/angular/guess-the-number/src/app/main/components/welcome/welcome.component.scss
+badd +13 ~/projects/angular/guess-the-number/src/app/main/components/welcome/welcome.component.ts
+badd +29 ~/projects/angular/guess-the-number/src/app/material/material.module.ts
+badd +16 ~/projects/angular/guess-the-number/package.json
+badd +0 ~/projects/angular/guess-the-number/angular.json
 argglobal
 %argdel
-edit ~/projects/angular/guess-the-number/src/app/components/welcome/welcome.component.scss
+edit ~/projects/angular/guess-the-number/angular.json
 argglobal
-balt ~/projects/angular/guess-the-number/src/app/components/welcome/welcome.component.html
+balt ~/projects/angular/guess-the-number/src/app/main/components/welcome/welcome.component.ts
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -41,14 +34,52 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-1,2fold
-5,6fold
+9,11fold
+13,14fold
+16,17fold
+8,18fold
+30,31fold
+35,38fold
+40,43fold
+45,46fold
+26,50fold
+55,58fold
+60,63fold
+54,64fold
+67,69fold
+66,70fold
+53,73fold
+80,82fold
+79,83fold
+75,84fold
+52,85fold
+24,87fold
+92,93fold
+95,96fold
+91,97fold
+89,99fold
+103,104fold
+101,105fold
+110,112fold
+116,119fold
+121,123fold
+109,125fold
+107,126fold
+131,133fold
+130,134fold
+128,135fold
+23,136fold
+6,137fold
+5,138fold
+141,142fold
+140,143fold
+1,144fold
 let &fdl = &fdl
-let s:l = 2 - ((1 * winheight(0) + 23) / 47)
+let s:l = 33 - ((21 * winheight(0) + 20) / 40)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 2
+keepjumps 33
 normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
