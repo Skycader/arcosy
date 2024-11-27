@@ -77,10 +77,10 @@ format = "GPU: $icon $average|"
 chip = "amdgpu-*"
 inputs = ["edge"]
 
-[[block]]
-block = "custom"
-command = "sed 's/  //' <(curl 'https://wttr.in/?format=1' -s)"
-interval = 600
+#[[block]]
+#block = "custom"
+#command = "sed 's/  //' <(curl 'https://wttr.in/?format=1' -s)"
+#interval = 600
 
 [[block]]
 block = "keyboard_layout"

@@ -13,10 +13,10 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +152 .zshrc
+badd +27 .zlogin
 argglobal
 %argdel
-edit .zshrc
+edit .zlogin
 argglobal
 setlocal fdm=manual
 setlocal fde=0
@@ -27,16 +27,14 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-12,13fold
-29,31fold
-35,36fold
+2,29fold
 let &fdl = &fdl
-let s:l = 127 - ((0 * winheight(0) + 23) / 47)
+let s:l = 27 - ((26 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 127
-normal! 0
+keepjumps 27
+normal! 08|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

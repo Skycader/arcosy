@@ -24,6 +24,7 @@ if [ "$(tty)" = "/dev/tty1" ]; then
 	export PATH=$PATH:$ANDROID_HOME/tools
 	export PATH=$PATH:$ANDROID_HOME/platform-tools
 	export PATH=$PATH:/usr/lib/jvm/java-8-openjdk/jre
+	export PATH=$PATH:/usr/lib/jvm/java-17-openjdk/bin
 	export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/jre
 	#exec sway
 fi

@@ -13,10 +13,10 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +0 400.txt
+badd +0 scroll.directive.ts
 argglobal
 %argdel
-edit 400.txt
+edit scroll.directive.ts
 argglobal
 setlocal fdm=manual
 setlocal fde=0
